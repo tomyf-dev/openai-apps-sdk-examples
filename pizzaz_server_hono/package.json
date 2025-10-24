@@ -1,0 +1,22 @@
+{
+  "name": "pizzaz-mcp-hono",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cloudflare Workers deployment of the Pizzaz MCP server built with Hono.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/mcp": "^0.1.4",
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "hono": "^4.10.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251014.0",
+    "wrangler": "^3.114.15"
+  }
+}
+
